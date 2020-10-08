@@ -4,5 +4,5 @@ Here, we present InFocus, an open-source, user-friendly, flexible and benchmarke
 Except where otherwise noted, this freeware is made available under the Creative Commons Attribution-NonCommercial 4.0 License (see LICENSE.md for full details). For use outside the conditions of the license, please contact Qingfeng Li. By downloading this freeware, you agree on your honor that the InFocus will be used for nonprofit purposes only, such as education or academic research.\
 \
 InFocus can be freely utilized for nonprofit purpose. In return, when the results obtained with InFocus lead to publication (e.g., in articles and conference proceedings whether peer-reviewed or not), the authors are kindly asked to [mention the name]() of the freeware (InFocus) in the text, and to [cite]() the below-mentioned article in the references. In this article, the theoretical approach associated with InFocus is described and benchmarked with experimental propagation results in various configurations.\
-\
+
 > Q. Li, M. Chambonneau, M. Blothe, H. Gross, S. Nolte, "A flexible, fast and benchmarked vectorial model for focused laser beams", [Submitted (2020)]()
