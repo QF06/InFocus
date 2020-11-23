@@ -37,7 +37,7 @@
 \affil[*]{Corresponding author: qingfeng.li@uni-jena.de} %% email address is required
 
 \begin{abstract}
-	In-bulk processing of materials by laser has largely evolved over the last decades and still reveals new scientific and industrial potential. The development of any in-bulk processing application relies on the knowledge of laser propagation especially volumetric field distribution near the focus. Many commercial programs can simulate this, but, in order to adapt them, or to develop new methods, researchers need to create their own software. Besides, people also need to know the actually field distribution near the focus to evaluate their assumptions in the simulation. To help people easily get their access to these knowledges, we decided to release our high-precision field distribution measuring method as well as our in-house software InFocus \cite{InFocus} , under the Creative Commons 4.0 License, an open-source license. Our measurements provide 300-nm longitudinal resolution and diffraction limited lateral resolution. And the in-house software allows fast vectorial analysis of the focused volumetric field distribution in the bulk. It considered the lens induced spherical aberrations as well as the planar interface induced spherical aberrations. The simulations and measurements are systematically compared. 
+	In-bulk processing of materials by laser has largely evolved over the last decades  and still reveals new scientific and industrial potential. The development of any in-bulk processing application relies on the knowledge of laser propagation especially volumetric field distribution near the focus. Many commercial programs can simulate this, but, in order to adapt them, or to develop new methods, researchers need to create their own software. Besides, people also need to know the actually field distribution near the focus to evaluate their assumptions in the simulation. To help people easily get their access to these knowledges, we decided to release our high-precision field distribution measuring method as well as our in-house software InFocus \cite{InFocus} , under the Creative Commons 4.0 License, an open-source license. Our measurements provide 300-nm longitudinal resolution and diffraction limited lateral resolution. And the in-house software allows fast vectorial analysis of the focused volumetric field distribution in the bulk. It considered the lens induced spherical aberrations as well as the planar interface induced spherical aberrations. The simulations and measurements are systematically compared. 
 \end{abstract}
 
 \setboolean{displaycopyright}{true}
@@ -54,7 +54,7 @@ Laser processing in the bulk of optical materials has attracted intensive attent
 The focus of the electromagnetic (EM) field can be rigorously described by the finite difference time domain (FDTD) method \cite{liu2000three}, however in general it requires significant computational time. Considerable effort has been devoted to designing propagation equations that on one hand preserve their computational simplicity and on the other hand preserve the correct description of nonparaxial and vertorial effects. In the nonlinear propagation regime, only until recently, the unidirectional Hertz vector propagation equation (UHPE) \cite{couairon2015propagation, PhysRevE.100.033316} was derived to provide a seamless transition from Maxwell’s equations to the various envelope-based model, that considerably reduces the computational effort. Simulations of the UHPE, require starting from input conditions, i.e., from the Hertz vector in a plane $z = z_0$. When the focusing elements have a high numerical aperature, the input conditions are then determined by a phase correction to the field that simulates the action of the focusing element. The input condtions for the UHPE were constructed by a detailed calculation of diffraction by vectorial diffraction integrals (VDIs) \cite{varga2000focusing1,varga2000focusing2}, i.e. the linear propagation model. However, even though the vectorial effects have been considered by VDIs, the residual aberrations of the focusing elements are often ignored, which leads deviation from the correctness in the real laser processing conditions.
 
 % sa number of alternative solutions are used to reduce the computational cost of Maxwell's solvers. One alternative is UPPE, if only consider linear propagation, DW intregral.   rely on the unidirectional pulse propagtion equation (UPPE) is recently reported to reduce the computational cost of Maxwell's solvers \cite{shipilo2019tight}. ultrashort laser pulses in bandgap material is given by the evolution of the optical field which follows the form of the scalar nonlinear Schr\"odinger equation  \cite{Sudrie2002}. Under this approximation, the laser beam is assumed remaining linearly polarized and the aberrations are often ignored. This assumption is valid when the laser is focused through a relatively low numerical aperature (NA < 0.6) into the low-refractive-index (< 1.5) materials with swallow depths (< 1-mm). However, when the laser is focused into the deep bulk of high-refractive-index material such as silicon, aberration induced by the interface must be considered. If high numerical aperature lens is used, polarization near the focus also turns to be complex. And in some cases, the focal lens would also introduced extra aberrations. In those conditions, using paraxial approximation would lead large deviation. 
-The purpose of this work is to have accurate descriptions of these input conditions by taking all the potential aberrations into account, and to have fast analyses with a proper transformation of the VDIs. One of the most widely integral for analysing the vectorial diffractions is the Debye-Wolf integral. As demonstrated by Leutenegger \emph{et~al.} \cite{leutenegger2006fast}, the 3D vectorial field distribution at the focus can be computed plane by plane under a proper transformation of the original Debye-Wolf integral. At a given axial position, the EM field in this plane is obtained by a two-dimensinal Fourier transform. Lin \emph{et~al.} \cite{Lin2012} have also demonstrated that this method is applicable to focusing through an interface between two mediums of mismatched refractive index. In this paper, we further adapt this method to non-aplanatic lens and provide a fast analysis tool which can evaluate the actual EM field distribution at the focus of the focusing elements. Meanwhile, a non-destructive method is introduced to provide 300-nm longitudinal and diffraction limited lateral resolution measurements of the in-bulk volumetric intensity distribution. The experimental reuslts benchmarked our numerical methods. 
+The purpose of this work is to have accurate descriptions of these input conditions by taking all the potential aberrations into account, and to have fast analyses with a proper transformation of the VDIs. One of the most widely integral for analysing the vectorial diffractions is the Debye-Wolf integral. As demonstrated by Leutenegger \emph{et~al.} \cite{leutenegger2006fast}, the 3D vectorial field distribution at the focus can be computed plane by plane under a proper transformation of the original Debye-Wolf integral. At a given axial position, the EM field in this plane is obtained by a two-dimensinal Fourier transform. Lin \emph{et~al.} \cite{Lin2012} have also demonstrated that this method is applicable to focusing through an interface between two mediums of mismatched refractive index. In this paper, we further adapt this method to the real lens conditions and provide a fast analysis tool which can evaluate the actual EM field distribution at the focus of the lens whose residual aberrations cannot be neglected. Meanwhile, a non-destructive method is introduced to provide 300-nm longitudinal and diffraction limited lateral resolution measurements of the in-bulk volumetric intensity distribution. The experimental reuslts benchmarked our numerical methods. 
 %In this paper, under the linear propagation condition, we are aiming to provide the electromagnetic (EM) field evolution by taking all the above mentioned extreme conditions into account. The results in this paper can easily adape to the nonlinear models and used as an initial condition for any nonlinear propagation investigating.  
 
 
@@ -264,6 +264,7 @@ As inspired by Leutenegger \cite{leutenegger2006fast}, we used the chirped Z-tra
 % \begin{equation}
 % 	\mathbf{e}_2(x,y,z,d)=-
 % \end{equation}
+
 \subsection{Representation of the complex strength vector}
 To determind the complex strength vector $\mathbf{c}$, let's assume that a linear polarized wave incident upon a lens. By choosing the corresponding Cartesian coordinate and letting the y and z-component of the incident electric field as zero, the incident electric strength vector can be written as
 
@@ -277,23 +278,30 @@ To determind the complex strength vector $\mathbf{c}$, let's assume that a linea
 \end{equation}
 
 According to T\"or\"ok \emph{et~al.} \cite{torok1995electromagnetic}, the transform relation betweeen the incident vector and the refracted vector after the interface can be expressed by a refraction operator $\mathbf{T}$. This operator has a matrix form of 
-
-\begin{strip}
 	\begin{equation}\label{eq:19}
 		\mathbf{T}=A(\phi_1)
 		\begin{bmatrix}
-			\tau_p\cos^2\theta\cos\phi_2+\tau_s\sin^2\theta& (\tau_p\cos\phi_2-\tau_s)\cos\theta\sin\theta& \tau_p\cos\theta\sin\phi_2\\
-			(\tau_p\cos\theta-\tau_s)\cos\theta\sin\theta& \tau_s\cos^2\theta+\tau_p\cos\phi_2\sin^2\theta& \tau_p\sin\theta\sin\phi_2\\
-			-\tau_p\cos\theta\sin\phi_2& -\tau_p\sin\theta\sin\phi_2& \tau_p\cos\phi_2
+			a_{11} & a_{12} & a_{13}\\
+			a_{12} & a_{22} & a_{23}\\
+			-a_{13} & a_{23} & a_{33}
 		\end{bmatrix}.
 	\end{equation}	
-\end{strip} 
-
-Here $\tau_s$ and $\tau_p$ are the Fresnel transmission coefficients for s-polarized and p-polarized light, respectively. The function $A(\phi_1)$ is an apodization function that depends on the lens. And when the system obeys Abbe's sine condition, i.e, is aplanatic, then
+with
+\begin{equation*}
+	\begin{aligned}
+		a_{11} &= \tau_p\cos^2\theta\cos\phi_2+\tau_s\sin^2\theta,\\
+		a_{12} &= (\tau_p\cos\phi_2-\tau_s)\cos\theta\sin\theta,\\
+		a_{13} &= \tau_p\cos\theta\sin\phi_2,\\
+		a_{22} &= \tau_s\cos^2\theta+\tau_p\cos\phi_2\sin^2\theta,\\
+		a_{23} &= \tau_p\sin\theta\sin\phi_2,\\
+		a_{33} &= \tau_p\cos\phi_2,\\	
+	\end{aligned}	
+\end{equation*}
+where $\tau_s$ and $\tau_p$ are the Fresnel transmission coefficients for s-polarized and p-polarized light, respectively. The function $A(\phi_1)$ is an apodization function that depends on the lens. And when the system obeys Abbe's sine condition, i.e, is aplanatic, then
 \begin{equation}\label{eq:20}
 	A(\phi_1)=f l_0\sqrt{\cos\phi_1}
 \end{equation}
-where $f_0$ is the focal length of the lens in vacuum and $l_0$ is an amplitude factor. \hl{It is worth noting that, since the complex strength vector has absorb the aberration phase factor, even many non-aplanatic lens are discussed in this paper, the Abbe's sine condition is still valid in this step.} 
+where $f_0$ is the focal length of the lens in vacuum and $l_0$ is an amplitude factor. \hl{It is assumed that the Abbe's sine condition is valid in this step, as it is usually fullfiled in a corrected microscopic lens or in a single spherical lens with the stop located at the lens.} 
 
 To represent the aberration phase factor and to scale it in the scale of wavelength $\lambda$, the aberration factor $e^{ik_1\Phi(r,\theta)}$ is rewritten as $e^{i2\pi W(r,\theta)}$. To describe a circular lens induced wavefront aberration and calculate the deviation of the wavefront to an ideal spherical shape, one widely used method is to represent it by Zernike polynomials.  %In this paper, we use the notation convention defined by R. Noll \cite{Noll1976}.
 % For spherical lens, the primary aberrations can be represented by the Seidel formula. The aberration function $W$ can be written as:
@@ -310,20 +318,18 @@ To represent the aberration phase factor and to scale it in the scale of wavelen
 
 By using the vendors provided lens data, the aberration function can be calculated in the form of superposion of Zernike polynomials through any home made ray tracing program or commercial softwares such as Zemax or Code V. In this paper, we used Zemax to calculate the aberration function and used the notation convention defined by R. Noll \cite{Noll1976} (so called Zernike standard polynomials):
 \begin{equation}\label{eq:22b}
-	W = \sum_{i=1}^{37}c_iZ_i(r,\theta_0),
+	W = \sum_{i=1}^{37}c_iZ_i(\rho,\theta_0),
 \end{equation}
-where $c_i$ is the orthonormal Zernike coeffient computed by Zemax, $Z_i$ is the corresponding Zernike standard polynomial.
+where $c_i$ is the orthonormal Zernike coeffient computed by Zemax, $Z_i$ is the corresponding Zernike standard polynomial and dimensionless radius $\rho = r/r_{max}$ that normalized to the radius of the entrance pupil.
 
 Finally from equations \eqref{eq:15} and \eqref{eq:18}-\eqref{eq:22b}, the complex strength vector after the interface can be written as:
-
-\begin{strip}
 	\begin{equation}
 		\begin{aligned}\label{eq:23}
 			\mathbf{c}&=f l_0\sqrt{\cos\phi_1}\\
 			&\times\begin{bmatrix}
-				\tau_p\cos^2\theta\cos\phi_2+\tau_s\sin^2\theta& (\tau_p\cos\phi_2-\tau_s)\cos\theta\sin\theta& \tau_p\cos\theta\sin\phi_2\\
-				(\tau_p\cos\theta-\tau_s)\cos\theta\sin\theta& \tau_s\cos^2\theta+\tau_p\cos\phi_2\sin^2\theta& \tau_p\sin\theta\sin\phi_2\\
-				-\tau_p\cos\theta\sin\phi_2& -\tau_p\sin\theta\sin\phi_2& \tau_p\cos\phi_2
+				a_{11} & a_{12} & a_{13}\\
+				a_{12} & a_{22} & a_{23}\\
+				-a_{13} & a_{23} & a_{33}
 				\end{bmatrix}
 				\begin{bmatrix}
 					e^{i2\pi W}&0&0\\
@@ -337,19 +343,19 @@ Finally from equations \eqref{eq:15} and \eqref{eq:18}-\eqref{eq:22b}, the compl
 				\end{bmatrix}.
 		\end{aligned}
 	\end{equation}	
-\end{strip}
 
-By substituting \eqref{eq:23} into \eqref{eq:12}, a CZT algorism based highly-efficient propagation model is compelete, it allows fast in-focus fields calculation by taking both lens-induced and interface-induced aberration into account.
+By substituting \eqref{eq:23} into \eqref{eq:12}, a CZT algorithm based highly-efficient propagation model is compelete, it allows fast in-focus fields calculation by taking both lens-induced and interface-induced aberration into account.
 
-\subsection{In-bulk propagation imaging}
-To have a systematic comparison with the numerical results. We intruduced the non-destructive measurements on the in-bulk volumetric intensity distributions, which rely on (i) the focusing of the laser beam at the exit surface of the sample with desired thickness, and (ii) an inverted microscope working in transmission for imaging the beam profile in the xy plane for various positions of the focusing objective along z. The experimental set-up is schematically depicted in Fig.~\ref{fig:2}.
+\section{Experimental arrangement}
+\subsection{Propagation imaging}
+To have a systematic comparison with the numerical results. We intruduced the non-destructive measurements on the in-bulk volumetric intensity distributions, which rely on (i) the focusing of the laser beam at the exit surface of the sample with desired thickness, and (ii) an inverted microscope working in transmission for imaging the beam profile in the xy plane for various positions of the focusing objective along the propagation direction z. The experimental set-up is schematically depicted in Fig.~\ref{fig:2}.
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{../AppOptics/figures/setup.pdf}
 	\caption{Illustration of in-bulk propagation imaging processes. (a) Experimental setup, MO: microscope objective lens, ND: neutral density filters. (b) Intensity distribution near the focal region reconstructed from the stacking of captured images applying a z-scan.}\label{fig:2}
 \end{figure}
 
-The measurements can explicitly devide into two steps. The first step consist in focusing the laser beam with identical characterisitics (beam size, spectrum, phase distribution, etc.) as the simulation. Before focusing, the pulse energy is kept as low as possible (typically, on the order of 18~pJ) for avoiding nonlinear propagation. In this case, we can set the maximum fluence position as the reference and overlap it with the exit surface of the cuboidal sample. The second step consists in imaging the exit surface of the sample with the inverted microscope working in transmission along the z axis. This microscope is composed of an collecting infinity-corrected objective lens whose numerical aperature (NA) is larger than the focusing one, a tube lens and an InGaAs array (Xenics, Bobcat 320). In this paper, the NA of the imaging objective lens is kept as 0.85 and its focal plane is precisely adjusted at the exit surface of the sample under the white light illumincation thanks to a precision stage (Physik Instrumente, M-126DG1). When there is no sample (focus in air), this plane can be arbitrarily choosen. The fluence evolution along the z-axis is recorded by alternating 100-nm movements of the focus lens (corresponding to $n\times100$-nm displacement in a sample with refractive index of $n$), and image acquisitions by the camera. The stack of images is then post-processed for reconstructing the fluence distribution as follows. Firstly, due to the jitter of the laser, some of the recorded images may show a much higher maximum intensity compare to both the preceding and the following one. These rare outlier images are replaced by the average of the preceding and the following images. Then, in the corner of each image, the noise is calculated as the average of the pixel amplitude, and subsequently subtracted to all pixels. The image containing the maximum grey level is found for a normalization of the whole stack. Two images before and after this latter image are defined for evaluating and correcting the residual tilt of the collecting objective lens with respect to the incoming beam. Finally, the beam propagation is reconstructed by displaying a cross section (along x or y) of each image at the center of the beam. 
+The measurements can explicitly devide into two steps. The first step consist in focusing the laser beam with identical characterisitics (beam size, spectrum, phase distribution, etc.) as the simulation. For the ultrashort pulse laser, before focusing, the pulse energy is kept as low as possible (typically, on the order of 18~pJ) for avoiding nonlinear propagation. In this case, we can set the maximum fluence position as the reference and overlap it with the exit surface of the cuboidal sample. The second step consists in imaging the exit surface of the sample with the inverted microscope working in transmission along the z-axis. This microscope is composed of an infinity-corrected objective lens whose numerical aperature (NA) is larger than the focusing elements, a tube lens and an InGaAs array (Xenics, Bobcat 320). In this paper, the NA of the imaging objective lens is kept as 0.85 and its focal plane is precisely adjusted at the exit surface of the sample under the white light illumincation by a manual translation stage. When there is no sample (focus in air), this plane can be arbitrarily choosen. Thanks to a precision stage (Physik Instrumente, M-126DC1), the laser intensity evolution along the z-axis is recorded by alternating 100-nm movements of the focus lens (corresponding to $n\times100$-nm displacement in a sample with refractive index of $n$), and image acquisitions by the camera. The stack of images is then post-processed for reconstructing the fluence distribution as follows. Firstly, due to the jitter of the laser, some of the recorded images may show a much higher maximum intensity compare to both the preceding and the following one. These rare outlier images are replaced by the average of the preceding and the following images. Then, in the corner of each image, the noise is calculated as the average of the pixel amplitude, and subsequently subtracted to all pixels. The image containing the maximum grey level is found for a normalization of the whole stack. Two images before and after this latter image are defined for evaluating and correcting the residual tilt of the collecting objective lens with respect to the incoming beam. Finally, the beam propagation is reconstructed by displaying a cross section (along x or y) of each image at the center of the beam. 
 
 \section{Results and discussions} \label{section:3}
 Based on the vectorial analysing model and the measurements setup, we selected four typical senarios, i.e. Gaussian beam focused by a plano-convex lens, Gaussian beam focused by an aspherical lens in air, exotic beams focused by objective lens in air, and finally Gaussian beam focused into a bulk material by objective lens for the demonstrations. The vendors of the lens and other information of those four senarios are list in table \ref{tab:1}.
