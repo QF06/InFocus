@@ -1,0 +1,11 @@
+vectorial
+nonparaxial
+UHPE
+VDIs
+FDTD
+InFocus
+Debye-Wolf
+Leutenegger
+collimated
+plano-convex
+ellipticity
