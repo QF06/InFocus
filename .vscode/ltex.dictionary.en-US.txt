@@ -9,3 +9,5 @@ Leutenegger
 collimated
 plano-convex
 ellipticity
+Zernike
+Zemax
