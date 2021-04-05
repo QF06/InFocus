@@ -58,3 +58,6 @@ publication/AppOptics/figures
 publication/AppOptics/.DS_Stores
 .DS_Store
 .vscode
+examples/
+App/
+publication/
