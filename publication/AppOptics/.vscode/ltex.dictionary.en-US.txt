@@ -1,5 +1,0 @@
-plano-convex
-vectorial
-InFocus
-collimated
-zernike
