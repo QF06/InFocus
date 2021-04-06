@@ -1,0 +1,269 @@
+\begin{thebibliography}{10}
+\newcommand{\enquote}[1]{``#1''}
+
+\bibitem{InFocus}
+Q.~Li, \enquote{In{F}ocus (version 1.0),}
+  \url{https://github.com/QF06/InFocus}. Accessed: 2021-01-18.
+
+\bibitem{bellouard2004fabrication}
+Y.~Bellouard, A.~Said, M.~Dugan, and P.~Bado, \enquote{Fabrication of
+  high-aspect ratio, micro-fluidic channels and tunnels using femtosecond laser
+  pulses and chemical etching,} {\protect\JournalTitle{Optics Express}}
+  \textbf{12}, 2120--2129 (2004).
+
+\bibitem{osellame2007integration}
+R.~Osellame, V.~Maselli, R.~M. Vazquez, R.~Ramponi, and G.~Cerullo,
+  \enquote{Integration of optical waveguides and microfluidic channels both
+  fabricated by femtosecond laser irradiation,} {\protect\JournalTitle{Applied
+  Physics Letters}} \textbf{90}, 231118 (2007).
+
+\bibitem{maselli2009femtosecond}
+V.~Maselli, J.~R. Grenier, S.~Ho, and P.~R. Herman, \enquote{Femtosecond laser
+  written optofluidic sensor: Bragg grating waveguide evanescent probing of
+  microfluidic channel,} {\protect\JournalTitle{Optics Express}} \textbf{17},
+  11719--11729 (2009).
+
+\bibitem{he2010direct}
+F.~He, Y.~Cheng, Z.~Xu, Y.~Liao, J.~Xu, H.~Sun, C.~Wang, Z.~Zhou, K.~Sugioka,
+  K.~Midorikawa \emph{et~al.}, \enquote{Direct fabrication of homogeneous
+  microfluidic channels embedded in fused silica using a femtosecond laser,}
+  {\protect\JournalTitle{Optics Letters}} \textbf{35}, 282--284 (2010).
+
+\bibitem{davis1996writing}
+K.~M. Davis, K.~Miura, N.~Sugimoto, and K.~Hirao, \enquote{Writing waveguides
+  in glass with a femtosecond laser,} {\protect\JournalTitle{Optics letters}}
+  \textbf{21}, 1729--1731 (1996).
+
+\bibitem{chambonneau2016writing}
+M.~Chambonneau, Q.~Li, M.~Chanal, N.~Sanner, and D.~Grojo, \enquote{Writing
+  waveguides inside monolithic crystalline silicon with nanosecond laser
+  pulses,} {\protect\JournalTitle{Optics Letters}} \textbf{41}, 4875--4878
+  (2016).
+
+\bibitem{pavlov2017femtosecond}
+I.~Pavlov, O.~Tokel, S.~Pavlova, V.~Kadan, G.~Makey, A.~Turnali, {\"O}.~Yavuz,
+  and F.~Ilday, \enquote{Femtosecond laser written waveguides deep inside
+  silicon,} {\protect\JournalTitle{Optics Letters}} \textbf{42}, 3028--3031
+  (2017).
+
+\bibitem{gebremichael2020double}
+W.~Gebremichael, L.~Canioni, Y.~Petit, and I.~Manek-H{\"o}nninger,
+  \enquote{Double-track waveguides inside calcium fluoride crystals,}
+  {\protect\JournalTitle{Crystals}} \textbf{10}, 109 (2020).
+
+\bibitem{wang2020nanosecond}
+X.~Wang, X.~Yu, M.~Berg, B.~DePaola, H.~Shi, P.~Chen, L.~Xue, X.~Chang, and
+  S.~Lei, \enquote{Nanosecond laser writing of straight and curved waveguides
+  in silicon with shaped beams,} {\protect\JournalTitle{Journal of Laser
+  Applications}} \textbf{32}, 022002 (2020).
+
+\bibitem{chambonneau2018inscribing}
+M.~Chambonneau, D.~Richter, S.~Nolte, and D.~Grojo, \enquote{Inscribing
+  diffraction gratings in bulk silicon with nanosecond laser pulses,}
+  {\protect\JournalTitle{Optics Letters}} \textbf{43}, 6069--6072 (2018).
+
+\bibitem{zhang2014seemingly}
+J.~Zhang, M.~Gecevi{\v{c}}ius, M.~Beresna, and P.~G. Kazansky,
+  \enquote{Seemingly unlimited lifetime data storage in nanostructured glass,}
+  {\protect\JournalTitle{Physical Review Letters}} \textbf{112}, 033901 (2014).
+
+\bibitem{crespi2011integrated}
+A.~Crespi, R.~Ramponi, R.~Osellame, L.~Sansoni, I.~Bongioanni, F.~Sciarrino,
+  G.~Vallone, and P.~Mataloni, \enquote{Integrated photonic quantum gates for
+  polarization qubits,} {\protect\JournalTitle{Nature Communications}}
+  \textbf{2}, 1--6 (2011).
+
+\bibitem{lammers2019embedded}
+K.~Lammers, M.~Ehrhardt, T.~Malendevych, X.~Xu, C.~Vetter, A.~Alberucci,
+  A.~Szameit, and S.~Nolte, \enquote{Embedded nanograting-based waveplates for
+  polarization control in integrated photonic circuits,}
+  {\protect\JournalTitle{Optical Materials Express}} \textbf{9}, 2560--2572
+  (2019).
+
+\bibitem{richter2016laser}
+S.~Richter, F.~Zimmermann, A.~T{\"u}nnermann, and S.~Nolte, \enquote{Laser
+  welding of glasses at high repetition rates--fundamentals and prospects,}
+  {\protect\JournalTitle{Optics \& Laser Technology}} \textbf{83}, 59--66
+  (2016).
+
+\bibitem{zhang2017interface}
+G.~Zhang, J.~Bai, W.~Zhao, K.~Zhou, and G.~Cheng, \enquote{Interface
+  modification based ultrashort laser microwelding between sic and fused
+  silica,} {\protect\JournalTitle{Optics Express}} \textbf{25}, 1702--1709
+  (2017).
+
+\bibitem{Cvecek2019}
+K.~Cvecek, S.~Dehmel, I.~Miyamoto, and M.~Schmidt, \enquote{{A review on glass
+  welding by ultra-short laser pulses},} {\protect\JournalTitle{International
+  Journal of Extreme Manufacturing}} \textbf{1}, 042001 (2019).
+
+\bibitem{penilla2019ultrafast}
+E.~Penilla, L.~Devia-Cruz, A.~Wieg, P.~Martinez-Torres, N.~Cuando-Espitia,
+  P.~Sellappan, Y.~Kodera, G.~Aguilar, and J.~Garay, \enquote{Ultrafast laser
+  welding of ceramics,} {\protect\JournalTitle{Science}} \textbf{365}, 803--808
+  (2019).
+
+\bibitem{Chambonneau2020}
+M.~Chambonneau, Q.~Li, V.~Y. Fedorov, M.~Blothe, K.~Schaarschmidt, M.~Lorenz,
+  S.~Tzortzakis, and S.~Nolte, \enquote{Taming ultrafast laser filaments for
+  optimized semiconductor--metal welding,} {\protect\JournalTitle{Laser \&
+  Photonics Reviews}} p. 2000433 (2020).
+
+\bibitem{Meyer2019}
+R.~Meyer, L.~Froehly, R.~Giust, J.~{Del Hoyo}, L.~Furfaro, C.~Billet, and
+  F.~Courvoisier, \enquote{{Extremely high-aspect-ratio ultrafast Bessel beam
+  generation and stealth dicing of multi-millimeter thick glass},}
+  {\protect\JournalTitle{Applied Physics Letters}} \textbf{114} (2019).
+
+\bibitem{Couairon2007}
+A.~Couairon and A.~Mysyrowicz, \enquote{{Femtosecond filamentation in
+  transparent media},} {\protect\JournalTitle{Physics Reports}} \textbf{441},
+  47--189 (2007).
+
+\bibitem{berge2007ultrashort}
+L.~Berg{\'e}, S.~Skupin, R.~Nuter, J.~Kasparian, and J.-P. Wolf,
+  \enquote{Ultrashort filaments of light in weakly ionized, optically
+  transparent media,} {\protect\JournalTitle{Reports on Progress in Physics}}
+  \textbf{70}, 1633 (2007).
+
+\bibitem{gamaly2013generation}
+E.~G. Gamaly, L.~Rapp, V.~Roppo, S.~Juodkazis, and A.~V. Rode,
+  \enquote{Generation of high energy density by fs-laser-induced confined
+  microexplosion,} {\protect\JournalTitle{New Journal of Physics}} \textbf{15},
+  025018 (2013).
+
+\bibitem{fedorov2016accessing}
+V.~Y. Fedorov, M.~Chanal, D.~Grojo, and S.~Tzortzakis, \enquote{Accessing
+  extreme spatiotemporal localization of high-power laser radiation through
+  transformation optics and scalar wave equations,}
+  {\protect\JournalTitle{Physical Review Letters}} \textbf{117}, 043902 (2016).
+
+\bibitem{sahoo2020dynamic}
+P.~K. Sahoo, T.~Feng, and J.~Qiao, \enquote{Dynamic pulse propagation modelling
+  for predictive femtosecond-laser-microbonding of transparent materials,}
+  {\protect\JournalTitle{Optics Express}} \textbf{28}, 31103--31118 (2020).
+
+\bibitem{liu2000three}
+J.~Liu, B.~Xu, and T.~C. Chong, \enquote{Three-dimensional finite-difference
+  time-domain analysis of optical disk storage system,}
+  {\protect\JournalTitle{Japanese Journal of Applied Physics}} \textbf{39}, 687
+  (2000).
+
+\bibitem{couairon2015propagation}
+A.~Couairon, O.~G. Kosareva, N.~Panov, D.~Shipilo, V.~Andreeva, V.~Jukna, and
+  F.~Nesa, \enquote{Propagation equation for tight-focusing by a parabolic
+  mirror,} {\protect\JournalTitle{Optics Express}} \textbf{23}, 31240--31252
+  (2015).
+
+\bibitem{PhysRevE.100.033316}
+D.~E. Shipilo, I.~A. Nikolaeva, V.~Y. Fedorov, S.~Tzortzakis, A.~Couairon,
+  N.~A. Panov, and O.~G. Kosareva, \enquote{Tight focusing of electromagnetic
+  fields by large-aperture mirrors,} {\protect\JournalTitle{Phys. Rev. E}}
+  \textbf{100}, 033316 (2019).
+
+\bibitem{varga2000focusing1}
+P.~Varga and P.~T{\"o}r{\"o}k, \enquote{Focusing of electromagnetic waves by
+  paraboloid mirrors. i. theory,} {\protect\JournalTitle{JOSA A}} \textbf{17},
+  2081--2089 (2000).
+
+\bibitem{varga2000focusing2}
+P.~Varga and P.~T{\"o}r{\"o}k, \enquote{Focusing of electromagnetic waves by
+  paraboloid mirrors. ii. numerical results,} {\protect\JournalTitle{JOSA A}}
+  \textbf{17}, 2090--2095 (2000).
+
+\bibitem{leutenegger2006fast}
+M.~Leutenegger, R.~Rao, R.~A. Leitgeb, and T.~Lasser, \enquote{Fast focus field
+  calculations,} {\protect\JournalTitle{Optics Express}} \textbf{14},
+  11277--11291 (2006).
+
+\bibitem{Lin2012}
+J.~Lin, O.~G. Rodr{\'{i}}guez-Herrera, F.~Kenny, D.~Lara, and J.~C. Dainty,
+  \enquote{{Fast vectorial calculation of the volumetric focused field
+  distribution by using a three-dimensional Fourier transform},}
+  {\protect\JournalTitle{Optics Express}} \textbf{20}, 1060 (2012).
+
+\bibitem{richards1959electromagnetic}
+B.~Richards and E.~Wolf, \enquote{Electromagnetic diffraction in optical
+  systems, ii. structure of the image field in an aplanatic system,}
+  {\protect\JournalTitle{Proceedings of the Royal Society of London. Series A.
+  Mathematical and Physical Sciences}} \textbf{253}, 358--379 (1959).
+
+\bibitem{torok1995electromagnetic}
+P.~T{\"o}r{\"o}k, P.~Varga, Z.~Laczik, and G.~Booker, \enquote{Electromagnetic
+  diffraction of light focused through a planar interface between materials of
+  mismatched refractive indices: an integral representation,}
+  {\protect\JournalTitle{JOSA A}} \textbf{12}, 325--332 (1995).
+
+\bibitem{Bakx2002}
+J.~L. Bakx, \enquote{{Efficient computation of optical disk readout by use of
+  the chirp z transform},} {\protect\JournalTitle{Appl. Opt.}} \textbf{41},
+  4897 (2002).
+
+\bibitem{Zemax}
+\enquote{Zemax,} \url{https://www.zemax.com/products/opticstudio}. Accessed:
+  2021-01-18.
+
+\bibitem{Noll1976}
+R.~J. Noll, \enquote{{Zernike polynomials and atmospheric turbulence},}
+  {\protect\JournalTitle{J. Opt. Soc. Am.}} \textbf{66}, 207 (1976).
+
+\bibitem{pasquier2015handling}
+C.~Pasquier, P.~Blandin, R.~Clady, N.~Sanner, M.~Sentis, O.~Ut{\'e}za, Y.~Li
+  \emph{et~al.}, \enquote{Handling beam propagation in air for nearly 10-fs
+  laser damage experiments,} {\protect\JournalTitle{Optics Communications}}
+  \textbf{355}, 230--238 (2015).
+
+\bibitem{wang2020ultrafast}
+A.~Wang, A.~Das, D.~Grojo \emph{et~al.}, \enquote{Ultrafast laser writing deep
+  inside silicon with thz-repetition-rate trains of pulses,}
+  {\protect\JournalTitle{Research}} \textbf{2020}, 8149764 (2020).
+
+\bibitem{cheng2003control}
+Y.~Cheng, K.~Sugioka, K.~Midorikawa, M.~Masuda, K.~Toyoda, M.~Kawachi, and
+  K.~Shihoyama, \enquote{Control of the cross-sectional shape of a hollow
+  microchannel embedded in photostructurable glass by use of a femtosecond
+  laser,} {\protect\JournalTitle{Optics Letters}} \textbf{28}, 55--57 (2003).
+
+\bibitem{ams2005slit}
+M.~Ams, G.~Marshall, D.~Spence, and M.~Withford, \enquote{Slit beam shaping
+  method for femtosecond laser direct-write fabrication of symmetric waveguides
+  in bulk glasses,} {\protect\JournalTitle{Optics Express}} \textbf{13},
+  5676--5681 (2005).
+
+\bibitem{wolf1981conditions}
+E.~Wolf and Y.~Li, \enquote{Conditions for the validity of the debye integral
+  representation of focused fields,} {\protect\JournalTitle{Optics
+  Communications}} \textbf{39}, 205--210 (1981).
+
+\bibitem{de2011modeling}
+A.~R. De~la Cruz, A.~Ferrer, J.~Del~Hoyo, J.~Siegel, and J.~Solis,
+  \enquote{Modeling of astigmatic-elliptical beam shaping during fs-laser
+  waveguide writing including beam truncation and diffraction effects,}
+  {\protect\JournalTitle{Applied Physics A}} \textbf{104}, 687--693 (2011).
+
+\bibitem{lou2018better}
+K.~Lou, S.~Granick, and F.~Amblard, \enquote{How to better focus waves by
+  considering symmetry and information loss,}
+  {\protect\JournalTitle{Proceedings of the National Academy of Sciences}}
+  \textbf{115}, 6554--6559 (2018).
+
+\bibitem{padgett2011tweezers}
+M.~Padgett and R.~Bowman, \enquote{Tweezers with a twist,}
+  {\protect\JournalTitle{Nature Photonics}} \textbf{5}, 343--348 (2011).
+
+\bibitem{ladavac2004microoptomechanical}
+K.~Ladavac and D.~G. Grier, \enquote{Microoptomechanical pumps assembled and
+  driven by holographic optical vortex arrays,} {\protect\JournalTitle{Optics
+  Express}} \textbf{12}, 1144--1149 (2004).
+
+\bibitem{hnatovsky2010materials}
+C.~Hnatovsky, V.~G. Shvedov, W.~Krolikowski, and A.~V. Rode, \enquote{Materials
+  processing with a tightly focused femtosecond laser vortex pulse,}
+  {\protect\JournalTitle{Optics Letters}} \textbf{35}, 3417--3419 (2010).
+
+\bibitem{li2016quantitative}
+Q.~Li, M.~Chambonneau, M.~Chanal, and D.~Grojo, \enquote{Quantitative-phase
+  microscopy of nanosecond laser-induced micro-modifications inside silicon,}
+  {\protect\JournalTitle{Applied Optics}} \textbf{55}, 9577--9583 (2016).
+
+\end{thebibliography}
