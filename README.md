@@ -5,4 +5,4 @@ Except where otherwise noted, this freeware is made available under the Creative
 \
 InFocus can be freely utilized for nonprofit purpose. In return, when the results obtained with InFocus lead to publication (e.g., in articles and conference proceedings whether peer-reviewed or not), the authors are kindly asked to [mention the name]() of the freeware (InFocus) in the text, and to [cite]() the below-mentioned article in the references. In this article, the theoretical approach associated with InFocus is described and benchmarked with experimental propagation results in various configurations.
 
-> Q. Li, M. Chambonneau, M. Blothe, H. Gross, S. Nolte, "A flexible, fast and benchmarked vectorial model for focused laser beams", [Submitted (2020)]()
+> Q. Li, M. Chambonneau, M. Blothe, H. Gross, S. Nolte, "A flexible, fast and benchmarked vectorial model for focused laser beams", [Submitted (2020)](https://arxiv.org/abs/2102.13414)
