@@ -1,5 +1,7 @@
 # InFocus
 Here, we present InFocus, an open-source, user-friendly, flexible and benchmarked model for fast vectorial analysis of the volumetric field distribution of light near the focus in any medium. The code corresponding to the freeware is written in MATLAB formalism. The spatial profile and the wavelength of the input beam can be set as arbitrary. The propagation is computed in up to two media (e.g. air and glass). The model accounts for aberrations induced by the focusing optics as well as eventual refractive index mismatch.
+
+One can directly run InFocus.mlapp in the R2018a or later version of MATLAB.  
 # Licence
 Except where otherwise noted, this freeware is made available under the Creative Commons Attribution-NonCommercial 4.0 License (see LICENSE.md for full details). For use outside the conditions of the license, please contact Qingfeng Li. By downloading this freeware, you agree on your honor that the InFocus will be used for nonprofit purposes only, such as education or academic research.\
 \
